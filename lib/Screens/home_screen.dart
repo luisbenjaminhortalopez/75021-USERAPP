@@ -45,6 +45,11 @@ body: Center(
     elevation: 5, 
   ),
           child:  const Text("Crear Perfil")),
+                         const SizedBox(height: 150),
+                                  const Text("Hecho por: Luis Benjamín Horta López", style: TextStyle(fontSize: 10, color: Color.fromARGB(255, 133, 133, 133)), textAlign: TextAlign.center, ),
+
+
+
       ],
     ),
   ),

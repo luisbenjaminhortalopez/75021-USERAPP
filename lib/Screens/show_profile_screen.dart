@@ -19,13 +19,20 @@ class ProfileScreen extends StatelessWidget {
             Text("Edad: $age", style: const TextStyle(fontSize: 18)),
             Text("Ocupación: $occupation", style: const TextStyle(fontSize: 18)),
             const SizedBox(height: 20),
-            ElevatedButton(onPressed: (){
-              Navigator.pushAndRemoveUntil(context,  MaterialPageRoute(builder: (context) => HomeScreen()),
-                  (route) => false,
-                );
-              },
-              child: const Text("Regresar a Inicio"),
- ),
+         ElevatedButton(
+          onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));},
+           style: ElevatedButton.styleFrom(
+            minimumSize: const Size(50, 70),
+    backgroundColor: Colors.deepPurple, 
+    foregroundColor: Colors.white, 
+    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15), 
+    textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold), 
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(12), 
+    ),
+    elevation: 5, 
+  ),
+          child:  const Text("Regresar a Inicio")),
           ],
         ),
       ),
